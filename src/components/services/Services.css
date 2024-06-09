@@ -1,0 +1,148 @@
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.875rem;
+}
+
+.services__card {
+  position: relative; /* Added for positioning the button */
+  text-align: left;
+  padding: 1.875rem;
+  border-radius: var(--border-radius);
+  background-color: var(--container-color);
+  transition: all 0.3s ease-in-out;
+  justify-content: space-between;
+ 
+}
+
+.services__card:hover {
+  transform: translateY(-10px);
+}
+
+.services__card:nth-child(1),
+[data-theme="dark"] .services__card:nth-child(1) {
+  background-color: #FFF;
+  box-shadow: var(--shadow);
+}
+
+[data-theme="dark"] .services__card:nth-child(1) {
+  background-color: var(--container-color);
+  box-shadow: var(--shadow);
+}
+
+.services__card:nth-child(2),
+[data-theme="dark"] .services__card:nth-child(2) {
+  background-color: #FFF;
+  box-shadow: var(--shadow);
+}
+
+[data-theme="dark"] .services__card:nth-child(2) {
+  background-color: var(--container-color);
+  /* box-shadow: 0 5px 20px 0 rgb(249, 215, 76 / 50%); */
+  box-shadow: var(--shadow);
+}
+
+.services__card:nth-child(3),
+[data-theme="dark"] .services__card:nth-child(3) {
+  background-color: #FFF;
+  box-shadow: var(--shadow);
+}
+
+[data-theme="dark"] .services__card:nth-child(3) {
+  background-color: var(--container-color);
+  /* box-shadow: 0 5px 20px 0 rgb(249, 123, 139 / 50%); */
+  box-shadow: var(--shadow);
+}
+
+.services__img {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+  margin-bottom: 1.25rem;
+  opacity: 70%;
+}
+
+[data-theme="dark"] .services__img{
+  
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+
+}
+
+.services__title {
+  font-size: 0.9rem;  
+  margin-top: 3rem; /* Adjust margin to accommodate the image var(--h3-font-size)*/
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.services__description {
+  font-size: 0.8rem; 
+  color: var(--description-color);
+  white-space: pre-line;
+
+
+  
+  line-height: 2; /* Adjust the line height as needed */
+}
+
+/* Styles for the circular button */
+.services__link-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+  height: 40px;
+  background-color: var(--first-color);
+  box-shadow: #2f2f2f;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+.services__card:hover .services__link-button {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.services__link-button:hover {
+  background-color: #becdfc;
+  /* animation: button-push 0.3s linear 1; */
+  box-shadow:  0px 0px 10px #becdfc;
+}
+
+@media screen and (max-width: 1024px) {
+  .services__container {
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__container {
+    grid-template-columns: 310px;
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .services__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
