@@ -5,9 +5,9 @@ const WorkExperience = [
         company: "University at Buffalo, NY",
         yearsActive: "To begin @ August 2024",
         information: [
-            "Assist in teaching \"Data Intensive Computing\" and \"Database and Query Languages,\" covering technologies like Hadoop, Apache Spark, MapReduce, PostgreSQL, and indexing techniques.",
+            "Assist in teaching \"Data Intensive Computing\" and \"Database and Query Languages,\" focusing on technologies such as Hadoop, Apache Spark, MapReduce, PostgreSQL, and indexing techniques.",
             "Provide student support, clarify doubts, and ensure understanding of concepts.",
-            "Facilitate communication between professor and students, inform students about events and updates.",
+            "Facilitate effective communication between the professor and students, keeping students informed about events and updates.",
             "Grade assignments, projects, and exam papers, ensuring fair and consistent evaluation of student performance."
         ],
     },
@@ -15,31 +15,29 @@ const WorkExperience = [
         id: 2,
         title: "Research Assistant",
         company: "University at Buffalo, NY",
-        yearsActive: "September 2023 - Present",
+        yearsActive: "January 2024 - Present",
         information: [
-            "Cleaned and processed million records of LA crime data, reducing data anomalies by 20%.",
-            "Conducted exploratory data analysis, creating 30+ visualizations (bar plots, heatmaps, etc.) to identify crime trends and patterns.",
-            "Built and evaluated 14 machine learning models with accuracies up to 73%.",
-            "Conducted research considering textual, spatial, and temporal perspectives; utilized LDA for topic modeling and LSTM to forecast crime, achieving high accuracy in predictions.",
+            "Analysed 1.5M crime instances with 14 ML models, to integrate Spatio- Temporal and Textual analysis for predictive policing.",
+            "Leveraged distributed computing (Hadoop) to handle vast spatial data for clustering algorithms and measured performance of 0.91 Silhouette score, indicating dense clusters.",
+            "Executed 5 topic modelling and temporal analysis with Latent Dirichlet Allocation (LDA), NLP techniques and LSTM.",
             
         ],
     },
     {
         id: 3,
         title: "Technical Operations Intern",
-        company: "Emryn",
+        company: "IntelQ",
         yearsActive: "January - June 2023",
         information: [
-            "Designed a professional logo and visual elements, enhancing the company’s brand identity.",
-            "Developed and launched a modern, responsive website from scratch, incorporating Dieter Rams’ design principles.",
-            "Diagnosed and resolved DNS issues affecting the email system, ensuring reliable communication channels.",
-            "Assisted with the company's rebranding transition, ensuring smooth and efficient processes.",
-            "Monitored and facilitated employee-to-client communications to maintain seamless operations."
+            "Led the full-stack migration during the company's rebranding, utilized React for web development and Figma, incorporating Dieter Rams’ design principles.",
+            "Implemented over 20 security policies and automated solutions for email & DNS issues, enhancing system integrity and communication.",
+            "Diagnosed and resolved 5 critical DNS issues impacting the email system, ensuring 99.9% uptime and reliable communication channels.",
+            "Monitored and facilitated over 50+ employee-to-client communications weekly, maintaining seamless operations."
         ],
     },
     {
         id: 4,
-        title: "Cyber Security Intern/Trainee",
+        title: "Cyber Security Apprentice",
         company: "Corizo Edutech",
         yearsActive: "January - June 2023",
         information: [
@@ -52,9 +50,9 @@ const WorkExperience = [
         id: 5,
         title: "Research Assistent",
         company: "Center of Excellence, VIT AP",
-        yearsActive: "February 2022 - July 2023",
+        yearsActive: "January 2022 - January 2023",
         information: [
-            "Comprehensive analysis of email security, led the year long research and as the primary author for a journal publication under the mentorship of Prof. Sibi Chakkaravarthy S.",
+            "Developed AI spam filtering pipeline with 30 test cases, studied demographic impacts on email spoofing detection, and devised 11 mitigation plans for improving email security.",
             "Explored malware like Comrat and Gdoc, delving into their exploitation of vulnerabilities within protocols such as SMTP and IMAP.",
             " Conducted an extensive survey investigating how age and education levels influence individual's ability to detect email spoofing."
         ],
@@ -63,10 +61,10 @@ const WorkExperience = [
         id: 6,
         title: "Student Assistant",
         company: "Center of Excellence, VIT AP",
-        yearsActive: "February 2022 - December 2022",
+        yearsActive: "January 2022 - January 2023",
         information: [
             "Enhancing Data Privacy with PIM Integration Implemented PIM through Microsoft Intune and EMS E5, aligning with PCI DSS and HIPPS standards to fortify data privacy in line with university requirements.",
-            "Streamlined security processes by orchestrating operations with CrowdSec, an open-source SOAR tool, resulting in heightened efficiency and improved security measures.",
+            "Streamlined security processes by orchestrating operations with CrowdSec, an open-source SOAR tool, resulting in heightened efficiency and improved security measures by 90%.",
         ],
     },
 ];
