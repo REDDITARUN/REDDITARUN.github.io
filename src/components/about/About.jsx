@@ -3,6 +3,7 @@ import './About.css';
 import Image from '../../assets/avatar-2.webp';
 import Resume from '../../assets/resume.pdf';
 import AboutBox from './AboutBox'; 
+import { PiX } from 'react-icons/pi';
 
 const About = () => {
     const downloadResume = async () => {
@@ -28,20 +29,20 @@ const About = () => {
                     When I'm not neck-deep in neural nets or tweaking algorithms, I'm usually sharing my latest "Woah!" moments on my blog or tinkering with some design projects. Because I love creative designs - who doesn't?
                     <br /><br />
                     I bet you've got some exciting ideas brewing too. What's got you curious lately? Let's connect and brainstorm - who knows what we might come up with together! 
-                    <br /><br />
-                    Here are some key areas I have worked with::
+                    
                     </p>
 
-                    <ul className="about__list">
+                    {/* <ul className="about__list">
                             <li><b>AI/ML & Deep Learning:</b> YOLO, BART, T5, CNNs, RNNs, LSTMs, Autoencoders</li>
                             <li><b>Reinforcement Learning:</b> Q-learning, DQN, PPO, A2C, SARSA, OpenAI Gym</li>
                             <li><b>Predictive Modeling:</b> Linear/Logistic Regression, Decision Trees, XGBoost, ANN, EfficientNet</li>
                             <li><b>Web Development:</b> Flask, Django, ReactJS, HTML, CSS</li>
                             <li><b>Cloud & Database:</b> AWS, GraphQL, PostgreSQL, DynamoDB</li>
                             <li><b>Cybersecurity:</b> Intune, MFA, RBAC, CrowdSec</li>
-                    </ul>
+                    </ul> */}
 
-                        <button className="btn" onClick={downloadResume}>Donwload CV</button>
+                        <button className="btn" onClick={downloadResume}>View My Resume</button>
+                        <a href="#contact" className="btn" >Jump to Connect</a>
                     </div>
 
                     {/* <div className="about__skills grid">
