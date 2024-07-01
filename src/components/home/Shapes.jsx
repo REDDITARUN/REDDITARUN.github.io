@@ -7,7 +7,7 @@ import { FaPenNib } from "react-icons/fa6";
 import { PiGraphFill } from "react-icons/pi";
 import { RiRobot2Line } from "react-icons/ri";
 import { IoIosApps } from "react-icons/io";
-import { BiCodeAlt } from "react-icons/bi";
+import { BiCodeAlt } from "react-icons/bi"; 
 
 
 
