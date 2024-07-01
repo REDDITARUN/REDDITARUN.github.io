@@ -172,6 +172,7 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   font-weight: var(--font-bold);
+  margin: 10px;
 }
 
 @keyframes button-push {
@@ -188,6 +189,7 @@ img {
   background-color: #8eb2ff;
   /* animation: button-push 0.3s linear 1; */
   box-shadow: 0px 0px 10px #becdfc;
+  
 }
 
 
