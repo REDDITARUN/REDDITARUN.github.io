@@ -20,14 +20,14 @@ const About = () => {
                 <div className="about__data grid">
                     <div className="about__info">
                     <p className="about__description">
-                    Hello! I am currently a Master's student at the University at Buffalo, pursuing a degree in Computer Science. 
-                    I completed my Bachelor's in Computer Science from VIT AP, India.
+                    Hello there!
+                    I am a Computer Science grad from UB. It's been an exciting journey, highlighted by the opportunity to showcase projects at two consecutive Demo Days, landing in the top 10 each time.
                     <br /><br />
-                    My journey in AI is driven by a passion to tackle real-world challenges through innovative solutions. 
-                    Currently, I am deeply engaged in researching how AI can be leveraged to prevent crime and enhance the safety of autonomous vehicles.
-                    This work has been both thrilling and impactful, constantly pushing the boundaries of what AI can achieve.
+                    You know that feeling when you learn something new and your brain goes, "Wait, how can we use this?" That's me, all the time. Lately, I've been diving into Reinforcement Learning (RL) and can't stop thinking about using it to teach a robot to navigate my mobile. The state space is huge, but that's what makes it fun, right? So I'm working on it 😁
                     <br /><br />
-                    I am dedicated to leveraging AI technology to make a significant impact, continually exploring new possibilities and striving to expand the frontiers of what's possible.
+                    When I'm not neck-deep in neural nets or tweaking algorithms, I'm usually sharing my latest "Woah!" moments on my blog or tinkering with some design projects. Because I love creative designs - who doesn't?
+                    <br /><br />
+                    I bet you've got some exciting ideas brewing too. What's got you curious lately? Let's connect and brainstorm - who knows what we might come up with together! 
                     <br /><br />
                     Here are some key areas I have worked with::
                     </p>

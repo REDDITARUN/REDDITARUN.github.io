@@ -15,6 +15,7 @@ import {
     RiSunLine,
     RiMenu2Line,
 } from "react-icons/ri"; 
+import { TbTools } from "react-icons/tb";
 
 import { FaRegNewspaper } from "react-icons/fa6";
 import { PiArticleMediumLight } from "react-icons/pi";
@@ -44,6 +45,12 @@ const Sidebar = (props) => {
                             <li className="nav__item">
                                 <a href="#about" className="nav__link" title="About Me">
                                     <RiUser3Line />
+                                </a>
+                            </li>
+
+                            <li className="nav__item">
+                                <a href="#skills" className="nav__link" title="Skills">
+                                    <TbTools />
                                 </a>
                             </li>
 

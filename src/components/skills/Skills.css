@@ -1,0 +1,103 @@
+/* Skills.css */
+
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.875rem;
+  row-gap: 1.875rem;
+}
+
+.skill__card {
+  position: relative;
+  text-align: left;
+  padding: 1.875rem;
+  border-radius: var(--border-radius);
+  background-color: var(--container-color);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  height: 100px; /* Set a fixed height for minimized state */
+  box-shadow: var(--shadow);
+}
+
+.skill__card:hover,
+.skill__card:focus {
+  height: auto; /* Set height to auto for expanded state */
+}
+
+.skill__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill__icon {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill__card:hover .skill__icon,
+.skill__card:focus .skill__icon {
+  transform: rotate(180deg);
+}
+
+.skill__content {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.skill__card:hover .skill__content,
+.skill__card:focus .skill__content {
+  max-height: 500px; /* Adjust as needed */
+  opacity: 1;
+  visibility: visible;
+}
+
+.skill__description {
+  font-size: 0.8rem;
+  color: var(--description-color);
+  white-space: pre-line;
+  line-height: 2;
+}
+
+.skill__description::before {
+  content: "• ";
+  color: var(--text-color);
+}
+
+.skill__content {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Light and Dark Theme Styles */
+[data-theme="dark"] .skill__card {
+  background-color: #333;
+  color: #fff;
+}
+
+[data-theme="light"] .skill__card {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills__container {
+    grid-template-columns: 1fr;
+    row-gap: 1.875rem;
+  }
+}
