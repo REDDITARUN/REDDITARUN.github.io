@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ea532f1.css",
-    "main.js": "/static/js/main.981a098f.js",
+    "main.css": "/static/css/main.6b822aeb.css",
+    "main.js": "/static/js/main.bac62a85.js",
     "static/media/5.jpg": "/static/media/5.aca7da0bcb2781770afe.jpg",
     "static/media/2.jpg": "/static/media/2.53ea89c9ec5c6471a28a.jpg",
     "static/media/9.jpg": "/static/media/9.9659771824bea3f942b0.jpg",
@@ -17,7 +17,7 @@
     "static/media/1.jpg": "/static/media/1.27553e370c7c577f5856.jpg",
     "static/media/14.jpg": "/static/media/14.511e48c807948351eb23.jpg",
     "static/media/15.jpg": "/static/media/15.2d2f143d918380a5a57e.jpg",
-    "static/media/resume.pdf": "/static/media/resume.ba202811364d86a2dbfe.pdf",
+    "static/media/resume.pdf": "/static/media/resume.ab0ae13a43914ef04186.pdf",
     "static/media/UB_Stacked_Small.png": "/static/media/UB_Stacked_Small.d3ad0fbdeb281e6947a0.png",
     "static/media/VIT-AP_University_seal.png": "/static/media/VIT-AP_University_seal.e794cd8d73639efa1a2a.png",
     "static/media/Medium2.webp": "/static/media/Medium2.f8b0cca32df5ca7c90a9.webp",
@@ -30,11 +30,11 @@
     "static/media/dots-bg-dark.svg": "/static/media/dots-bg-dark.3a79e4a2778386f14af1.svg",
     "static/media/dots-bg.svg": "/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
     "index.html": "/index.html",
-    "main.1ea532f1.css.map": "/static/css/main.1ea532f1.css.map",
-    "main.981a098f.js.map": "/static/js/main.981a098f.js.map"
+    "main.6b822aeb.css.map": "/static/css/main.6b822aeb.css.map",
+    "main.bac62a85.js.map": "/static/js/main.bac62a85.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ea532f1.css",
-    "static/js/main.981a098f.js"
+    "static/css/main.6b822aeb.css",
+    "static/js/main.bac62a85.js"
   ]
 }
