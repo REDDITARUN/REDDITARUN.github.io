@@ -5,6 +5,8 @@ import { RiGithubLine, RiLink } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { GoPlusCircle } from "react-icons/go";
 import { FaPlus  } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { PiArticleMediumLight } from "react-icons/pi";
 
 const Portfolio = () => {
     const initialFilter = "AI/ML/RL";
@@ -28,7 +30,7 @@ const Portfolio = () => {
 
     return (
         <section className="portfolio container section" id="portfolio">
-            <h2 className="section__title">Recent Projects</h2>
+            <h2 className="section__title">My Art</h2>
 
             <div className="portfolio__filters">
                 <span className={activeFilter === 1 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("AI/ML/RL"); setActiveFilter(1) }}>
@@ -77,11 +79,11 @@ const Portfolio = () => {
                                     <div className="portfolio__buttons">
                                         {url && (
                                             <a href={url} target="_blank" rel="noreferrer" className="portfolio__button">
-                                                <RiLink className="portfolio__button-icon" />
+                                                <PiArticleMediumLight className="portfolio__button-icon" />
                                             </a>
                                         )}
                                         <a href={repositoryUrl} target="_blank" rel="noreferrer" className="portfolio__github-button">
-                                            <FaPlus  className="portfolio__button-icon" />
+                                            <FaGithub  className="portfolio__button-icon" />
                                         </a>
                                     </div>
                                 </div>

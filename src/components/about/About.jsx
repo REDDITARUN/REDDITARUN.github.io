@@ -13,7 +13,7 @@ const About = () => {
 
     return (
         <section className="about container section" id="about">
-            <h2 className="section__title">About Me </h2>
+            <h2 className="section__title">A Little About Me</h2>
 
             <div className="about__container grid">
                 <img src={Image} alt="" className='about__img' />
@@ -22,14 +22,9 @@ const About = () => {
                     <div className="about__info">
                     <p className="about__description">
                     Hello there!
-                    I am a Computer Science grad from UB. It's been an exciting journey, highlighted by the opportunity to showcase projects at two consecutive Demo Days, landing in the top 10 each time.
+                    Meet a Computer Science master’s student at the University at Buffalo who’s obsessed with pushing boundaries through AI and ML.  Learning and creating aren’t just part of the grind, they’re my fuel. I’m always experimenting, spinning up projects, and sharing what I discover, always aiming to solve problems in ways that make people think, “Well, that’s different!”
                     <br /><br />
-                    You know that feeling when you learn something new and your brain goes, "Wait, how can we use this?" That's me, all the time. Lately, I've been diving into Reinforcement Learning (RL) and can't stop thinking about using it to teach a robot to navigate my mobile. The state space is huge, but that's what makes it fun, right? So I'm working on it 😁
-                    <br /><br />
-                    When I'm not neck-deep in neural nets or tweaking algorithms, I'm usually sharing my latest "Woah!" moments on my blog or tinkering with some design projects. Because I love creative designs - who doesn't?
-                    <br /><br />
-                    I bet you've got some exciting ideas brewing too. What's got you curious lately? Let's connect and brainstorm - who knows what we might come up with together! 
-                    
+                    Right now, I’m developing tech to help visually impaired folks navigate with real-time visual cues, and I’m building a smart road safety system that detects traffic cues and distances to keep drivers alert. If you’re into big ideas with a twist or have a project that needs a fresh perspective, let’s connect - let’s make something awesome (and maybe a little unexpected).😁
                     </p>
 
                     {/* <ul className="about__list">
@@ -41,7 +36,7 @@ const About = () => {
                             <li><b>Cybersecurity:</b> Intune, MFA, RBAC, CrowdSec</li>
                     </ul> */}
 
-                        <button className="btn" onClick={downloadResume}>View My Resume</button>
+                        {/* <button className="btn" onClick={downloadResume}>View My Resume</button> */}
                         <a href="#contact" className="btn" >Jump to Connect</a>
                     </div>
 

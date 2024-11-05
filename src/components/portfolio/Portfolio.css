@@ -12,7 +12,7 @@
   transition: 0.3s;
 }
 
-.portfolio__item-active {
+.portfolio__item-active { 
   color: var(--first-color);
   border-radius: 16px;
   padding: 8px 10px;
@@ -208,3 +208,5 @@
 .portfolio__list li {
   margin-bottom: 0.5rem; /* Add space between list items */
 }
+
+

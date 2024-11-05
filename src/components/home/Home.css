@@ -186,7 +186,7 @@
 } */
 
 .shape {
-  position: absolute;
+  position: absolute; 
   animation: float 5s ease-in-out infinite;
   transition: transform 0.3s ease-out, transform 0.1s ease-in;
   transform-style: preserve-3d;
@@ -198,3 +198,5 @@
   transform: scale(1.5);
   
 }
+
+

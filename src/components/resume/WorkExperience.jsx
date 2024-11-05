@@ -1,14 +1,13 @@
 const WorkExperience = [
     {
         id: 1,
-        title: "Teaching Assistant",
+        title: "Graduate Student Assistant",
         company: "University at Buffalo, NY",
-        yearsActive: "To begin @ August 2024",
+        yearsActive: "August 2024 - Present",
         information: [
-            "Assist in teaching \"Data Intensive Computing\" and \"Database and Query Languages,\" focusing on technologies such as Hadoop, Apache Spark, MapReduce, PostgreSQL, and indexing techniques.",
-            "Provide student support, clarify doubts, and ensure understanding of concepts.",
-            "Facilitate effective communication between the professor and students, keeping students informed about events and updates.",
-            "Grade assignments, projects, and exam papers, ensuring fair and consistent evaluation of student performance."
+            "Guided 200+ students in Data Intensive Computing, building skills in Hadoop, Spark, and large-scale data processing.",
+            "Facilitated communication between professor and students, providing timely updates and supporting effective learning.",
+            "Graded assignments, projects, and exams, ensuring fair and consistent evaluations for enhanced academic performance.",
         ],
     },
     {
@@ -17,9 +16,10 @@ const WorkExperience = [
         company: "University at Buffalo, NY",
         yearsActive: "January 2024 - Present",
         information: [
-            "Analysed 1.5M crime instances with 14 ML models, to integrate Spatio- Temporal and Textual analysis for predictive policing.",
-            "Leveraged distributed computing (Hadoop) to handle vast spatial data for clustering algorithms and measured performance of 0.91 Silhouette score, indicating dense clusters.",
-            "Executed 5 topic modelling and temporal analysis with Latent Dirichlet Allocation (LDA), NLP techniques and LSTM.",
+            "Led autonomous vehicle safety research, developing 3 adaptive approaches with 95%+ accuracy using LoRA and ViT to enhance driver and pedestrian safety.",
+            "Developed a depth-based pedestrian detection model with a 0.5ms response time on V100, improving detection speed by 50%.",
+            "Created LSTM model for crime data forecasting, achieving 0.9 loss and analyzing 1.5M instances for spatial-temporal insights in predictive policing.",
+            "Employed Hadoop for scalable clustering, achieving a 0.91 Silhouette score and uncovering key crime trends through LDA and NLP analysis.",
             
         ],
     },
@@ -48,25 +48,25 @@ const WorkExperience = [
     },
     {
         id: 5,
-        title: "Research Assistent",
+        title: "Research Assistant",
         company: "Center of Excellence, VIT AP",
         yearsActive: "January 2022 - January 2023",
         information: [
             "Developed AI spam filtering pipeline with 30 test cases, studied demographic impacts on email spoofing detection, and devised 11 mitigation plans for improving email security.",
             "Explored malware like Comrat and Gdoc, delving into their exploitation of vulnerabilities within protocols such as SMTP and IMAP.",
-            " Conducted an extensive survey investigating how age and education levels influence individual's ability to detect email spoofing."
+            "Deployed PIM through Microsoft Intune and EMS E5, achieving 100% alignment with PCI DSS and HIPAA, and streamlined security with CrowdSec, improving operational efficiency by 25%."
         ],
     },
-    {
-        id: 6,
-        title: "Student Assistant",
-        company: "Center of Excellence, VIT AP",
-        yearsActive: "January 2022 - January 2023",
-        information: [
-            "Enhancing Data Privacy with PIM Integration Implemented PIM through Microsoft Intune and EMS E5, aligning with PCI DSS and HIPPS standards to fortify data privacy in line with university requirements.",
-            "Streamlined security processes by orchestrating operations with CrowdSec, an open-source SOAR tool, resulting in heightened efficiency and improved security measures by 90%.",
-        ],
-    },
+    // {
+    //     id: 6,
+    //     title: "Student Assistant",
+    //     company: "Center of Excellence, VIT AP",
+    //     yearsActive: "January 2022 - January 2023",
+    //     information: [
+    //         "Enhancing Data Privacy with PIM Integration Implemented PIM through Microsoft Intune and EMS E5, aligning with PCI DSS and HIPPS standards to fortify data privacy in line with university requirements.",
+    //         "Streamlined security processes by orchestrating operations with CrowdSec, an open-source SOAR tool, resulting in heightened efficiency and improved security measures by 90%.",
+    //     ],
+    // },
 ];
 
 export default WorkExperience;

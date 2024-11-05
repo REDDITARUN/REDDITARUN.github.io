@@ -71,6 +71,12 @@ const Sidebar = (props) => {
                                     <RiStackLine />
                                 </a>
                             </li>
+                            
+                            <li className="nav__item">
+                                <a href="#blog" className="nav__link" title="Articles">
+                                    <PiArticleMediumLight />
+                                </a>
+                            </li>
 
                             <li className="nav__item">
                                 <a href="#certificate" className="nav__link" title="Certifications">
@@ -84,11 +90,7 @@ const Sidebar = (props) => {
                                 </a>
                             </li>
 
-                            <li className="nav__item">
-                                <a href="#blog" className="nav__link" title="Articles">
-                                    <PiArticleMediumLight />
-                                </a>
-                            </li>
+
 
                             <li className="nav__item">
                                 <a href="#contact" className="nav__link" title="Get In Touch">

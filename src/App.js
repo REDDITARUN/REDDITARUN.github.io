@@ -32,9 +32,10 @@ function App() {
                 <Services />  
                 <Resume />
                 <Portfolio />
+                <Blog />
                 <Certificate/>
                 <Testimonials />
-                <Blog />
+
                 <Contact theme={theme} />
             </main>
         </div>
