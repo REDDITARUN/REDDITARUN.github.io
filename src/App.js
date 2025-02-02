@@ -12,6 +12,7 @@ import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
 import useLocalStorage from 'use-local-storage';
 import Certificate from './components/certificate/Certificate';
+import Chatbot from './components/chatbot/Chatbot';
 
 function App() {
     const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -35,8 +36,8 @@ function App() {
                 <Blog />
                 <Certificate/>
                 <Testimonials />
-
                 <Contact theme={theme} />
+                <Chatbot />
             </main>
         </div>
     );

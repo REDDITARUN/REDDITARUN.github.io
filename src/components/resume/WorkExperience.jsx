@@ -8,7 +8,7 @@ const WorkExperience = [
             "Guided 200+ students in Data Intensive Computing, building skills in Hadoop, Spark, and large-scale data processing.",
             "Facilitated communication between professor and students, providing timely updates and supporting effective learning.",
             "Graded assignments, projects, and exams, ensuring fair and consistent evaluations for enhanced academic performance.",
-        ],
+        ], 
     },
     {
         id: 2,
