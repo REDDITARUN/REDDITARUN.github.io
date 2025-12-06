@@ -4,6 +4,7 @@ import './globals.css'
 import { Header } from './header'
 import { Footer } from './footer'
 import { ThemeProvider } from 'next-themes'
+import Script from 'next/script'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@_TeenDifferent',
     creator: '@teendifferent',
-    images: ['/cover.jpg'],
+    images: ['/profile_3.jpg'],
   },
   icons: {
     icon: '/favicon.ico',
@@ -87,22 +88,33 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
       >
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-E2BK15D69K"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-setup" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-E2BK15D69K');
+          `}
+        </Script>
+
         <ThemeProvider
           enableSystem={true}
           attribute="class"
           storageKey="theme"
           defaultTheme="system"
         >
+          {/* existing layout */}
           <div className="flex min-h-screen w-full flex-col font-[family-name:var(--font-inter-tight)]">
             <div className="relative mx-auto w-full max-w-screen-md flex-1 px-4 pt-20">
               <Header />
