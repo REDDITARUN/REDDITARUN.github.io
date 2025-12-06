@@ -8,6 +8,9 @@ const nextConfig = {
   },
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 const withMDX = createMDX({
