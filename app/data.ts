@@ -366,4 +366,4 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 
-export const EMAIL = 'iamtarunreddi@email.com'
+export const EMAIL = 'iamtarunreddi@gmail.com'
