@@ -41,7 +41,23 @@ type Skills = {
   skills: string[]
 }
 
+type OpenSourceModel = {
+  title: string
+  modelType: string
+  description: string
+  link: string
+  id: string
+}
+
 export const PROJECTS: Project[] = [
+  {
+    name: 'System Cursor',
+    description:
+      'Experimental system-wide AI autocomplete that uses Gemini Flash with visual context for smarter, app-agnostic suggestions.',
+    read_link: '',
+    code_link: 'https://github.com/REDDITARUN/systemcursor',
+    id: 'project17',
+  },
   {
     name: 'DEPTHS - Depth and Proximity Tracking for Human Support',
     description:
@@ -292,6 +308,33 @@ export const SKILLS: Skills[] = [
   },
 ]
 
+export const OPEN_SOURCE_MODELS: OpenSourceModel[] = [
+  {
+    title: 'TD-HallOumi-3B',
+    modelType: 'Text Generation',
+    description:
+      'Trained version ofLlama-3.2-3B for sentence-level hallucination detection, outperforming DeepSeek R1.',
+    link: 'https://huggingface.co/Teen-Different/TD-HallOumi-3B',
+    id: 'oss-model-1',
+  },
+  {
+    title: 'Qwen2.5-Coder-KernelBook',
+    modelType: 'Text Generation',
+    description:
+      'Fine-tuned on 18k PyTorch-Triton pairs via LoRA, achieving 98.3% accuracy for Triton kernel generation.',
+    link: 'https://huggingface.co/Teen-Different/Qwen2.5-Coder-3B-KernelBook-Finetuned',
+    id: 'oss-model-2',
+  },
+  {
+    title: 'SmolVLM-LaTeX',
+    modelType: 'Image + Text → Text',
+    description:
+      'Fine-tuned 256M VLM that converts handwritten equations to LaTeX.',
+    link: 'https://huggingface.co/Teen-Different/smolvlm-256m-latex',
+    id: 'oss-model-3',
+  },
+]
+
 export const PUBLICATIONS: Publications[] = [
   {
     title: 'Adaptive Driver Assistance: Context-based Approach to Pedestrian Safety',
@@ -320,6 +363,12 @@ export const PUBLICATIONS: Publications[] = [
 ]
 
 export const BLOG_POSTS: BlogPosts[] = [
+  {
+    title: 'apply_chat_template() Is the Safety Switch',
+    description: 'How a Single Function Call Gates Safety Alignment in Gemma, Qwen, and Other Open-Source LLMs',
+    link: 'https://teendifferent.substack.com/p/apply_chat_template-is-the-safety',
+    uid: 'blog-3',
+  },
   {
     title: 'Sample-Tuned Rank-Augmented Weights',
     description: 'An experiment in making neural networks rewrite themselves for every single input.',

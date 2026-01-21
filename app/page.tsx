@@ -22,6 +22,7 @@ import {
   EMAIL,
   SOCIAL_LINKS,
   SKILLS,
+  OPEN_SOURCE_MODELS,
 } from './data'
 import { InView } from '@/components/ui/in-view'
 
@@ -83,6 +84,22 @@ function MagneticSocialLink({
 export default function Personal() {
   const [expandedJobId, setExpandedJobId] = useState<string | null>(null)
   const [activeSkillIndex, setActiveSkillIndex] = useState(0)
+
+  const modelTypePalette = [
+    'bg-sky-100 text-sky-800 dark:bg-sky-900/40 dark:text-sky-200',
+    'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200',
+    'bg-violet-100 text-violet-800 dark:bg-violet-900/40 dark:text-violet-200',
+    'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200',
+    'bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-200',
+  ]
+
+  const modelTypeColorMap: Record<string, string> = {}
+  OPEN_SOURCE_MODELS.forEach((model) => {
+    if (!modelTypeColorMap[model.modelType]) {
+      const index = Object.keys(modelTypeColorMap).length % modelTypePalette.length
+      modelTypeColorMap[model.modelType] = modelTypePalette[index]
+    }
+  })
 
   return (
     <motion.main
@@ -253,13 +270,12 @@ export default function Personal() {
         </div>
       </motion.section>
 
-
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-3 text-lg font-medium">Blog</h3>
-        <p className="mb-5 text-zinc-600 dark:text-zinc-400"> These blogs are also cross-posted on Substack. (See my previous Medium articles here <a href="https://medium.com/@teendifferent" target="_blank" rel="noopener noreferrer" className="underline dark:text-zinc-300">@teendifferent</a>)</p>
+        <p className="mb-5 text-zinc-600 dark:text-zinc-400"> These blogs are posted on my Substack. (See my previous Medium articles here <a href="https://medium.com/@teendifferent" target="_blank" rel="noopener noreferrer" className="underline dark:text-zinc-300">@teendifferent</a>)</p>
         <div className="flex flex-col space-y-0">
           <AnimatedBackground
             enableHover
@@ -291,6 +307,58 @@ export default function Personal() {
             ))}
           </AnimatedBackground>
         </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className="mb-5 text-lg font-medium">Open Source Models</h3>
+        <InView
+          viewOptions={{ once: true, margin: '0px 0px -150px 0px' }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.08 },
+            },
+          }}
+        >
+          <div className="grid grid-cols-1 gap-5">
+            {OPEN_SOURCE_MODELS.map((model) => (
+              <motion.div
+                key={model.id}
+                variants={{
+                  hidden: { opacity: 0, y: 20, filter: 'blur(8px)' },
+                  visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
+                }}
+              >
+                <div className="space-y-2">
+                  <div className="px-1">
+                    <div className="flex items-start justify-between gap-3">
+                      <a
+                        href={model.link}
+                        className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {model.title}
+                      </a>
+                      <span
+                        className={`inline-flex items-center rounded-lg  px-2.5 py-0.5 text-s font-medium ${modelTypeColorMap[model.modelType]}`}
+                      >
+                        {model.modelType}
+                      </span>
+                    </div>
+                    <p className="mt-1 text-base text-zinc-600 dark:text-zinc-400">
+                      {model.description}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </InView>
       </motion.section>
 
 
