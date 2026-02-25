@@ -274,45 +274,6 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-medium">Blog</h3>
-        <p className="mb-5 text-zinc-600 dark:text-zinc-400"> These blogs are posted on my Substack. (See my previous Medium articles here <a href="https://medium.com/@teendifferent" target="_blank" rel="noopener noreferrer" className="underline dark:text-zinc-300">@teendifferent</a>)</p>
-        <div className="flex flex-col space-y-0">
-          <AnimatedBackground
-            enableHover
-            className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-900/80"
-            transition={{
-              type: 'spring',
-              bounce: 0,
-              duration: 0.2,
-            }}
-          >
-            {BLOG_POSTS.map((post) => (
-              <Link
-                key={post.uid}
-                className="-mx-3 rounded-xl px-3 py-3"
-                href={post.link}
-                data-id={post.uid}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="flex flex-col space-y-1">
-                  <h4 className="font-normal dark:text-zinc-100">
-                    {post.title}
-                  </h4>
-                  <p className="text-zinc-500 dark:text-zinc-400">
-                    {post.description}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </AnimatedBackground>
-        </div>
-      </motion.section>
-
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
         <h3 className="mb-5 text-lg font-medium">Open Source Models</h3>
         <InView
           viewOptions={{ once: true, margin: '0px 0px -150px 0px' }}
@@ -359,6 +320,45 @@ export default function Personal() {
             ))}
           </div>
         </InView>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className="mb-3 text-lg font-medium">Blog</h3>
+        <p className="mb-5 text-zinc-600 dark:text-zinc-400"> These blogs are posted on my Substack. (See my previous Medium articles here <a href="https://medium.com/@teendifferent" target="_blank" rel="noopener noreferrer" className="underline dark:text-zinc-300">@teendifferent</a>)</p>
+        <div className="flex flex-col space-y-0">
+          <AnimatedBackground
+            enableHover
+            className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-900/80"
+            transition={{
+              type: 'spring',
+              bounce: 0,
+              duration: 0.2,
+            }}
+          >
+            {BLOG_POSTS.map((post) => (
+              <Link
+                key={post.uid}
+                className="-mx-3 rounded-xl px-3 py-3"
+                href={post.link}
+                data-id={post.uid}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex flex-col space-y-1">
+                  <h4 className="font-normal dark:text-zinc-100">
+                    {post.title}
+                  </h4>
+                  <p className="text-zinc-500 dark:text-zinc-400">
+                    {post.description}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </AnimatedBackground>
+        </div>
       </motion.section>
 
 

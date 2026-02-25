@@ -51,6 +51,30 @@ type OpenSourceModel = {
 
 export const PROJECTS: Project[] = [
   {
+    name: '0RL',
+    description:
+      'ReAct agent that compiles natural language into full Gymnasium/Genesis RL environments, 8-stage validation, auto-fix loop, and a live 3D viewer.',
+    read_link: '',
+    code_link: 'https://github.com/REDDITARUN/zero_rl',
+    id: 'project20',
+  },
+  {
+    name: 'Zero Me',
+    description:
+      'Always-on desktop voice agent with a state-reactive blob UI. Speech-to-speech via Pipecat + Gemini Live over WebRTC.',
+    read_link: '',
+    code_link: 'https://github.com/REDDITARUN/zero_me',
+    id: 'project21',
+  },
+  {
+    name: 'SF Quest',
+    description:
+      'Gamified city exploration — RAG-powered itineraries, real-time voice agent, and NeMo + CuVS retrieval for cultural discovery.',
+    read_link: '',
+    code_link: 'https://github.com/REDDITARUN/golden-gate-quest',
+    id: 'project22',
+  },
+  {
     name: 'System Cursor',
     description:
       'Experimental system-wide AI autocomplete that uses Gemini Flash with visual context for smarter, app-agnostic suggestions.',
@@ -332,6 +356,22 @@ export const OPEN_SOURCE_MODELS: OpenSourceModel[] = [
       'Fine-tuned 256M VLM that converts handwritten equations to LaTeX.',
     link: 'https://huggingface.co/Teen-Different/smolvlm-256m-latex',
     id: 'oss-model-3',
+  },
+  {
+    title: 'CLIP-ViT-IJEPA-VLMs-0.5B',
+    modelType: 'Image + Text → Text',
+    description:
+      'Three frozen vision encoders (CLIP, ViT, I-JEPA) stitched into Qwen-0.5B via trainable projectors + LoRA.',
+    link: 'https://huggingface.co/Teen-Different/CLIP-ViT-IJEPA-VLMs-0.5B',
+    id: 'oss-model-4',
+  },
+  {
+    title: 'CLIP-ViT-IJEPA-VLMs-1.5B',
+    modelType: 'Image + Text → Text',
+    description:
+      '1.5B scale-up of the encoder-stitching experiment — bigger LLM, clearer embedding signal.',
+    link: 'https://huggingface.co/Teen-Different/CLIP-ViT-IJEPA-VLMs-1.5B',
+    id: 'oss-model-5',
   },
 ]
 
