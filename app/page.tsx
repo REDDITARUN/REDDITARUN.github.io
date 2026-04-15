@@ -128,7 +128,7 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-          Building big functions (neural nets) from scratch, or orchestrates big and small functions (agents). 
+          Building big functions [neural nets] from scratch, or orchestrating big and small ones [agents].
           Obsessed with making them more human-like… constantly experimenting, writing what’s learned, and recharging through nature, cycling, and hiking. 
           </p>
         </div>
