@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // 2. Blog posts
   const posts: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
-    url: `${base}${post.link}`,
+    url: post.link.startsWith('http') ? post.link : `${base}${post.link}`,
     lastModified: new Date(),
   }))
 

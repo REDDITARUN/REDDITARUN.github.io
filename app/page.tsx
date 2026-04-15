@@ -128,8 +128,8 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-          I love building and training tiny neural nets (GPU-poor life), across anything from text to vision and audio. 
-          Most of my experiments explore making models a bit more human-like, and I write blogs to share what I learn.
+          Building big functions (neural nets) from scratch, or orchestrates big and small functions (agents). 
+          Obsessed with making them more human-like… constantly experimenting, writing what’s learned, and recharging through nature, cycling, and hiking. 
           </p>
         </div>
       </motion.section>
@@ -231,45 +231,6 @@ export default function Personal() {
         </div>
       </motion.section>
 
-
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
-        <h3 className="mb-3 text-lg font-medium">Publications</h3>
-        <div className="flex flex-col space-y-0">
-          <AnimatedBackground
-            enableHover
-            className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-900/80"
-            transition={{
-              type: 'spring',
-              bounce: 0,
-              duration: 0.2,
-            }}
-          >
-            {PUBLICATIONS.map((post) => (
-              <Link
-                key={post.uid}
-                className="-mx-3 rounded-xl px-3 py-3"
-                href={post.link}
-                data-id={post.uid}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="flex flex-col space-y-1">
-                  <h4 className="font-normal dark:text-zinc-100">
-                    {post.title}
-                  </h4>
-                  <p className="text-zinc-500 dark:text-zinc-400">
-                    {post.description}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </AnimatedBackground>
-        </div>
-      </motion.section>
-
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
@@ -341,6 +302,44 @@ export default function Personal() {
             {BLOG_POSTS.map((post) => (
               <Link
                 key={post.uid}
+                className="-mx-2 rounded-xl px-3 py-3"
+                href={post.link}
+                data-id={post.uid}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex flex-col space-y-1">
+                  <h4 className="font-normal dark:text-zinc-100">
+                    {post.title}
+                  </h4>
+                  <p className="mt-1 truncate text-base text-zinc-500 dark:text-zinc-400">
+                    {post.description}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </AnimatedBackground>
+        </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className="mb-3 text-lg font-medium">Publications</h3>
+        <div className="flex flex-col space-y-0">
+          <AnimatedBackground
+            enableHover
+            className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-900/80"
+            transition={{
+              type: 'spring',
+              bounce: 0,
+              duration: 0.2,
+            }}
+          >
+            {PUBLICATIONS.map((post) => (
+              <Link
+                key={post.uid}
                 className="-mx-3 rounded-xl px-3 py-3"
                 href={post.link}
                 data-id={post.uid}
@@ -361,7 +360,6 @@ export default function Personal() {
         </div>
       </motion.section>
 
-
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
@@ -378,51 +376,47 @@ export default function Personal() {
             }}>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           {PROJECTS.map((project) => (
-                  <motion.div
-                  key={project.name}
-                  variants={{
-                    hidden: { opacity: 0, y: 20, filter: 'blur(8px)' },
-                    visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
-                   }}
-                 >
-            <div key={project.name} className="space-y-2">
-
-              <div className="px-1">
+            <motion.div
+              key={project.id}
+              className="-mx-3 block w-full rounded-xl px-3 py-3 transition-colors duration-150 hover:bg-zinc-100 dark:hover:bg-zinc-900/80"
+              variants={{
+                hidden: { opacity: 0, y: 20, filter: 'blur(8px)' },
+                visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
+              }}
+            >
+              <div className="space-y-1 px-1">
                 <a
                   className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
                   target="_blank"
                 >
                   {project.name}
-                  
                 </a>
-                <div className="flex flex-row justify-start space-x-3">
-                {project.code_link && (
-                  <a
-                    href={project.code_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center rounded-lg bg-sky-100 px-2.5 py-0.5 text-s font-medium text-zinc-700 hover:bg-sky-200 dark:bg-sky-900/40 dark:text-sky-200 dark:hover:bg-sky-900/70"
-                  >
-                    Code
-                  </a>
-                )}
-                {project.read_link && (
-                  <a
-                    href={project.read_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center rounded-lg bg-amber-100 px-2.5 py-0.5 text-s font-medium text-zinc-700 hover:bg-amber-200 dark:bg-amber-900/40 dark:text-amber-200 dark:hover:bg-amber-900/70"
-                  >
-                    Read
-                  </a>
-                )}
-              </div>
-                <p className="text-base text-zinc-600 dark:text-zinc-400">
+                <div className="flex flex-row justify-start gap-3">
+                  {project.code_link && (
+                    <a
+                      href={project.code_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center rounded-sm bg-sky-100 px-2 py-0.2 text-s font-medium text-zinc-700 hover:bg-sky-200 dark:bg-sky-900/40 dark:text-sky-200 dark:hover:bg-sky-900/70"
+                    >
+                      Code
+                    </a>
+                  )}
+                  {project.read_link && (
+                    <a
+                      href={project.read_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center rounded-sm bg-amber-100 px-2 py-0.2 text-s font-medium text-zinc-700 hover:bg-amber-200 dark:bg-amber-900/40 dark:text-amber-200 dark:hover:bg-amber-900/70"
+                    >
+                      Read
+                    </a>
+                  )}
+                </div>
+                <p className="text-justify text-base text-zinc-600 dark:text-zinc-400">
                   {project.description}
                 </p>
               </div>
-                
-            </div>
             </motion.div>
           ))}
         </div>

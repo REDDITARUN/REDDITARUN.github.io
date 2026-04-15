@@ -19,6 +19,7 @@ export type AnimatedBackgroundProps = {
   className?: string
   transition?: Transition
   enableHover?: boolean
+  keepActiveOnLeave?: boolean
 }
 
 export function AnimatedBackground({
@@ -28,6 +29,7 @@ export function AnimatedBackground({
   className,
   transition,
   enableHover = false,
+  keepActiveOnLeave = false,
 }: AnimatedBackgroundProps) {
   const [activeId, setActiveId] = useState<string | null>(null)
   const uniqueId = useId()
@@ -52,7 +54,11 @@ export function AnimatedBackground({
     const interactionProps = enableHover
       ? {
           onMouseEnter: () => handleSetActiveId(id),
-          onMouseLeave: () => handleSetActiveId(null),
+          onMouseLeave: () => {
+            if (!keepActiveOnLeave) {
+              handleSetActiveId(null)
+            }
+          },
         }
       : {
           onClick: () => handleSetActiveId(id),
@@ -83,7 +89,7 @@ export function AnimatedBackground({
             />
           )}
         </AnimatePresence>
-        <div className="z-10">{child.props.children}</div>
+        <div className="relative z-10 w-full">{child.props.children}</div>
       </>,
     )
   })

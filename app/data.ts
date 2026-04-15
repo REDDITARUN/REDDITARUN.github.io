@@ -1,3 +1,5 @@
+import generatedBlogPosts from './generated/substack-posts.json'
+
 type Project = {
   name: string
   description: string
@@ -80,7 +82,7 @@ export const PROJECTS: Project[] = [
       'Experimental system-wide AI autocomplete that uses Gemini Flash with visual context for smarter, app-agnostic suggestions.',
     read_link: '',
     code_link: 'https://github.com/REDDITARUN/systemcursor',
-    id: 'project17',
+    id: 'project23',
   },
   {
     name: 'DEPTHS - Depth and Proximity Tracking for Human Support',
@@ -402,7 +404,7 @@ export const PUBLICATIONS: Publications[] = [
   },
 ]
 
-export const BLOG_POSTS: BlogPosts[] = [
+const MANUAL_BLOG_POSTS: BlogPosts[] = [
   {
     title: 'apply_chat_template() Is the Safety Switch',
     description: 'How a Single Function Call Gates Safety Alignment in Gemma, Qwen, and Other Open-Source LLMs',
@@ -422,6 +424,9 @@ export const BLOG_POSTS: BlogPosts[] = [
     uid: 'blog-1',
   },
 ]
+
+export const BLOG_POSTS: BlogPosts[] =
+  generatedBlogPosts.length > 0 ? generatedBlogPosts : MANUAL_BLOG_POSTS
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
