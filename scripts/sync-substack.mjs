@@ -10,6 +10,12 @@ const OUTPUT_PATH = path.resolve(
 const MAX_POSTS = 10;
 
 const parser = new Parser();
+const REQUEST_HEADERS = {
+  // Substack can reject generic CI user agents with 403.
+  'user-agent':
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
+  accept: 'application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.8',
+};
 
 function stripHtml(value = '') {
   return value.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
@@ -26,7 +32,13 @@ function getDescription(item) {
 
 async function syncSubstack() {
   try {
-    const feed = await parser.parseURL(FEED_URL);
+    const response = await fetch(FEED_URL, { headers: REQUEST_HEADERS });
+    if (!response.ok) {
+      throw new Error(`Feed request failed with status ${response.status}`);
+    }
+
+    const xml = await response.text();
+    const feed = await parser.parseString(xml);
     const posts = (feed.items ?? [])
       .filter((item) => item.link && item.title)
       .slice(0, MAX_POSTS)

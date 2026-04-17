@@ -1,50 +1,56 @@
 [
   {
+    "title": "The Revival of Predictive Coding",
+    "description": "Introducing EqPropMomentum: A physics-grounded optimizer for biologically plausible AI.",
+    "link": "https://teendifferent.substack.com/p/the-revival-of-predictive-coding",
+    "uid": "blog-10"
+  },
+  {
     "title": "Adaptive Attention at Inference Time: Does It Actually Work?",
     "description": "A hypernetwork that rewires GPT's value heads on every forward pass. And the answer is... not straightforward.",
     "link": "https://teendifferent.substack.com/p/adaptive-attention-at-inference-time",
-    "uid": "blog-10"
+    "uid": "blog-9"
   },
   {
     "title": "Zero RL - From Words to Worlds",
     "description": "Automating the least glamorous, most expensive part of reinforcement learning: building the world.",
     "link": "https://teendifferent.substack.com/p/zero-rl-from-words-to-worlds",
-    "uid": "blog-9"
+    "uid": "blog-8"
   },
   {
     "title": "Stitching Vision into LLMs: A Comparative Analysis of Embedding Spaces",
     "description": "Building a VLM from scratch using model stitching and LoRA — comparing CLIP's language alignment vs. I-JEPA's world modeling.",
     "link": "https://teendifferent.substack.com/p/stitching-vision-into-llms-a-comparative",
-    "uid": "blog-8"
+    "uid": "blog-7"
   },
   {
     "title": "apply_chat_template() Is the Safety Switch",
     "description": "How a Single Function Call Gates Safety Alignment in Gemma, Qwen, and Other Open-Source LLMs",
     "link": "https://teendifferent.substack.com/p/apply_chat_template-is-the-safety",
-    "uid": "blog-7"
+    "uid": "blog-6"
   },
   {
     "title": "AI 2025 Retrospective: The Static Graph Ceiling",
     "description": "My thoughts on the frontier labs' gatekeeping, the rise of the app layer, and why we need open algorithms, not just open weights.",
     "link": "https://teendifferent.substack.com/p/ai-2025-retrospective-the-static",
-    "uid": "blog-6"
+    "uid": "blog-5"
   },
   {
     "title": "Sample-Tuned Rank-Augmented Weights",
     "description": "An experiment in making neural networks rewrite themselves for every single input. Inspired by the human brain.",
     "link": "https://teendifferent.substack.com/p/sample-tuned-rank-augmented-weights",
-    "uid": "blog-5"
+    "uid": "blog-4"
   },
   {
     "title": "Your Features Aren’t What You Think They Are",
     "description": "Evaluating Local Feature Attribution and Decision Fidelity in Deep Vision Models via Perturbation-Based Explanations",
     "link": "https://teendifferent.substack.com/p/your-features-arent-what-you-think",
-    "uid": "blog-4"
+    "uid": "blog-3"
   },
   {
     "title": "Ground Zero",
     "description": "New phase, new experiments.",
     "link": "https://teendifferent.substack.com/p/ground-zero",
-    "uid": "blog-3"
+    "uid": "blog-2"
   }
 ]
