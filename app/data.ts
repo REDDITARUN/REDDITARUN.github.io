@@ -240,14 +240,24 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Makora (Formerly Mako)',
+    company: 'TheoAI',
     title: 'AI Engineer',
-    description: 'Working on Fine-tuning LLMs (SFT/RFT), agentic workflows for kernel gen across CUDA/HIP/Triton.',
-    start: 'Aug 2025',
+    description: 'Working on legal AI agents, evals, and source-grounded document intelligence for litigation defense.',
+    start: 'Apr 2026',
     end: 'Present',
     link: 'https://www.linkedin.com/in/tarunreddi/',
-    id: 'work7',
+    id: 'work8',
     tag: 'present',
+  },
+  {
+    company: 'Makora (Formerly Mako)',
+    title: 'AI Engineer',
+    description: 'Worked on Fine-tuning LLMs (SFT/RFT), agentic workflows for kernel gen across CUDA/HIP/Triton.',
+    start: 'Aug 2025',
+    end: 'Mar 2026',
+    link: 'https://www.linkedin.com/in/tarunreddi/',
+    id: 'work7',
+    tag: 'work',
   },
   {
     company: 'University at Buffalo, SUNY',
